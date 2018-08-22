@@ -12,16 +12,13 @@ public class quicksort {
 	public static void quickSort(int[] arr, int low, int high) {
 		if (arr == null || arr.length == 0) return;
 		if (low >= high) return;
-		// pick the pivot
-		int middle = low + (high - low) / 2;
+		int middle = (high - low) / 2; // pick the pivot
 		int pivot = arr[middle];
-
-		// make left < pivot and right > pivot
-		int i = low, j = high;
+		int i = low;
+		int j = high;
 		while (i <= j) {
 			while (arr[i] < pivot) i++;
 			while (arr[j] > pivot) j--;
-
 			if (i <= j) {
 				int temp = arr[i];
 				arr[i] = arr[j];
@@ -30,12 +27,8 @@ public class quicksort {
 				j--;
 			}
 		}
-
-		// recursively sort two sub parts
-		if (low < j)
-			quickSort(arr, low, j);
-
-		if (high > i)
-			quickSort(arr, i, high);
+		if (low < j) quickSort(arr, low, j); //sort both sides recursively
+		if (high > i) quickSort(arr, i, high);
 	}
 }
+
