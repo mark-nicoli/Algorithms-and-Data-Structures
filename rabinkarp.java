@@ -1,5 +1,8 @@
-// rabin karp algorithm is a string search algorithm. In this program i will be using rabin karp algorithm
-//to find the occurences of patterns in a string
+/*
+  String search algorithm (rabin-karp).
+  aim is to find the number of occurences of  certain patterns in a string.
+*/
+
 import java.util.*;
 import java.math.BigInteger;
 public class rabinkarp{
