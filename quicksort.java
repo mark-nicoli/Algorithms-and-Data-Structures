@@ -8,11 +8,10 @@ public class quicksort {
 		quickSort(x, low, high);
 		System.out.println(Arrays.toString(x));
 	}
-
 	public static void quickSort(int[] arr, int low, int high) {
 		if (arr == null || arr.length == 0) return;
 		if (low >= high) return;
-		int middle = (high - low) / 2; // pick the pivot
+		int middle = (high - low)/2; // pick the pivot
 		int pivot = arr[middle];
 		int i = low;
 		int j = high;
