@@ -1,6 +1,6 @@
 /*
   String search algorithm (rabin-karp).
-  aim is to find the number of occurences of  certain patterns in a string.
+  aim is to find the number of occurences of certain patterns in a string.
 */
 
 import java.util.*;
