@@ -1,5 +1,5 @@
 import java.util.*;
-
+//basic hashmap example
 public class hashMaps{
   public static void main(String[]args){
     HashMap<String,String>hash = new HashMap<>();
