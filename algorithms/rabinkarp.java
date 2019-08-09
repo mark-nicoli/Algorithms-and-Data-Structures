@@ -47,5 +47,4 @@ public class rabinkarp{
       if(HashIn.equals(Hash)) return true;
       return false;
     }
-
 }
