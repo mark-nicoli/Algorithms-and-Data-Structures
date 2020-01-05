@@ -1,2 +1,2 @@
 # Algorithms-and-Data-Structures
-Projects from cs210 and cs211.
+Projects from CS210 and CS211.
